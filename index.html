@@ -24,11 +24,15 @@
             </a-assets>
 
                 <a-entity
+                    light="type: ambient; color: #CCF; intensity: 200 "
+                    light="type: hemisphere; color: #654; groundColor: #fff; intensity: 200 "
+                    renderer="physicallyCorrectLights: true"
+                    position="300 0 100" rotation="0 270 0"
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
-                    scale="0.022140853098432976 0.022140853098432976 0.022140853098432976"
-                    gps-entity-place="latitude: 40.11961452961655; longitude: -74.30479109287263;"
+                    scale="0.03795574816874225 0.03795574816874225 0.03795574816874225"
+                    gps-entity-place="latitude: 40.099471348024785; longitude: -74.22689555996305;"
                 ></a-entity>
 
             <a-camera gps-camera rotation-reader></a-camera>
